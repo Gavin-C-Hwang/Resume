@@ -17,9 +17,15 @@
     h6 {
         font-family: "Roboto", sans-serif
     }
-
+.scrollable {
+  overflow: auto; -webkit-overflow-scrolling: touch;
+}
 </style>
-
+<script>
+    if( (navigator.language || navigator.userLanguage) == 'ko-KR' ){
+        window.location.href = "./index_ko.html";    
+    }
+</script>
 <body class="w3-light-grey">
 
     <!-- Page Container -->
@@ -35,7 +41,7 @@
                     <div class="w3-display-container">
                         <img src="./profile/profile.jpg" style="width:100%" alt="Gavin Hwang">
                         <div class="w3-display-middle w3-display-left w3-container w3-text-black">
-                            <h2>Gavin Hwang</h2>
+                            <h2 lang="Korea">Gavin Hwang</h2>
                         </div>
                     </div>
                     <div class="w3-container">
@@ -225,7 +231,9 @@
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2017 - Aug 2017</h6>
                             <p> - Skills : Html, CSS, Jquery</p>
                             <div style="padding-left: 10px;padding-top: 35px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
+                                <div class="scrollable" style="width: 242px;height: 440px;">
                                 <iframe src="http://5789.tistory.com/13" style="width: 242px;height: 440px; border: 0px"></iframe>
+                                </div>
                             </div>
                             <hr>
                         </div>
@@ -234,7 +242,9 @@
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2017 - Aug 2017</h6>
                             <p> - Skills : Html, CSS, Jquery</p>
                             <div style="padding-left: 10px;padding-top: 35px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
+                                <div class="scrollable" style="width: 242px;height: 440px;">
                                 <iframe src="http://5789.tistory.com/14" style="width: 242px;height: 440px; border: 0px"></iframe>
+                                </div>
                             </div>
                             <hr>
                         </div>
@@ -282,13 +292,15 @@
     </div>
 
     <footer class="w3-container w3-teal w3-center w3-margin-top">
-        <p>Find me on social media.</p>
+        <p> </p><br><p></p>
+        <div style="display: none">
         <i class="fa fa-facebook-official w3-hover-opacity"></i>
         <i class="fa fa-instagram w3-hover-opacity"></i>
         <i class="fa fa-snapchat w3-hover-opacity"></i>
         <i class="fa fa-pinterest-p w3-hover-opacity"></i>
         <i class="fa fa-twitter w3-hover-opacity"></i>
         <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
     </footer>
 
 </body>
